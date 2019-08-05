@@ -1,0 +1,16 @@
+<!-- sidebar start -->
+<div class="sidenav-wrap">
+<aside id="sidenav" class="show">
+  <ul>
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.docs }}
+      
+          <li class="parent">
+              <a href="{{.URL }}">{{.Name }}</a>
+             {{ partial "menu_recursion.html" . }}
+          </li>
+        
+      {{ end }}
+  </ul>
+</aside>
+</div>

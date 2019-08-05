@@ -1,0 +1,53 @@
+/******
+***
+*** Position Utilties
+***
+*******/
+
+.space-vert {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.space-hor {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+.space-left {
+  padding-left: 4rem;
+}
+
+.space-right {
+  padding-right: 4rem;
+}
+
+.space-bottom {
+  padding-bottom: 4rem;
+}
+
+.space-top {
+  padding-top: 4rem;
+}
+
+.center {
+  margin: auto;
+}
+
+/******
+***
+*** Type Utilties
+***
+*******/
+
+.upper {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}

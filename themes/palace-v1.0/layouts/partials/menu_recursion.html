@@ -1,0 +1,8 @@
+<ul>
+{{ range .Children }}
+
+<li >  <a href="{{ .URL }}">{{ .Name }}</a></li>
+  {{ partial "menu_recursion.html" . }}
+
+{{ end }}
+</ul>

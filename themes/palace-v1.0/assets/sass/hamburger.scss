@@ -1,0 +1,27 @@
+.hamburger {
+	width: 4rem;
+	height: 4rem;
+	margin: auto;
+
+	.line {
+		margin-top: 0.3rem;
+		width: 3rem;
+		padding: 0.2rem;
+		background-color: $colorc;
+		transition: all 0.2s ease-in-out;
+  }
+  &>:hover {
+    .line:first-child {
+      background-color: $colord;
+      transform: rotate(45deg) translate(2px, 18px);
+    }
+    .line:nth-child(2) {
+      opacity: 0;
+    }
+    .line:last-child {
+      background-color: $colord;
+      transform: rotate(-45deg) translate(-3px, -15px);
+    }
+  }
+}
+

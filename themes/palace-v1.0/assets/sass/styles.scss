@@ -1,0 +1,142 @@
+@import "normalize.scss";
+@import "marx.scss";
+@import "color.scss";
+@import "typography/typography.scss";
+@import "typography/type_color.scss";
+@import "utilities.scss";
+@import "hamburger.scss";
+
+// @import "nav.scss";
+
+body {
+  background-color: #fffefb;
+  
+      a {
+        color: $colorc;
+      }
+  #content {
+    display: flex;
+    // document navigation 
+    .sidenav-wrap {
+      flex: 0 0 0;
+      width: 0px;
+      overflow: hidden;
+      background-color: $grey-l-2;
+    }
+    .sidenav-wrap.show {
+      flex: 0 0 20rem;
+      width: 80vw;
+      overflow: hidden;
+      
+    }
+    #sidenav {
+     
+      position: fixed;
+      margin: 0px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      top: 0px;
+      left: 0px;
+      
+      transition: all ease-in-out .3s;
+
+      //  sidenav 
+      ul {
+        padding-left: 20px;
+        list-style: none;
+
+        li {
+          a {
+            color: $colord;
+            font-weight: 700;
+          }
+
+
+          ul {
+            li {
+              a {
+                color: lighten($colord, 15%);
+
+              }
+            }
+
+            ul {
+              li {
+                a {
+                  color: lighten($colord, 1%);
+                  font-weight: 400;
+                }
+              }
+
+              ul {
+                li {
+                  a {
+                    color: lighten($colord, 15%);
+                  }
+                }
+              }
+            }
+          }
+
+        }
+
+      }
+
+      // Hamburger 
+      // &>:first-child {
+      //   right: -5rem;
+      //   position: absolute;
+      // }    
+      // &.hide {
+      //   max-width: 0px;
+      //   ul {
+      //     overflow: hidden;
+      //   }
+      // }
+    }
+   #TableOfContents {
+     margin-right: 0px;
+      width: 20rem;
+     ul {
+       padding-left: 20px;
+     }
+   }
+  }
+}
+
+@media screen and (min-width: 900px){
+  body {
+    #content {
+      display: flex;
+      .sidenav-wrap {
+        flex: 0 0 20rem;
+        width: 0px;
+        overflow: hidden;
+      }
+      .sidenav-wrap.show {
+        flex: 0 0 20rem;
+        overflow: hidden;
+        height: 100%;
+      }
+      #sidenav {
+        position: sticky;
+        top: 2px;
+        width: 20vw;
+        height: 200vh;
+      }
+      
+     
+      main {
+        flex-grow: 1;
+      }
+      #TableOfContents {
+        position: sticky;
+        top: 0px;
+        flex-basis: 10rem;
+        flex-grow: 0;
+      
+      }
+    }
+  }
+  
+}

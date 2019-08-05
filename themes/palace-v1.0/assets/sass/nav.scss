@@ -1,0 +1,57 @@
+nav.main {
+  padding: 2rem;
+
+  ul {
+    list-style: none;
+    display: flex;
+
+    li {
+      a {
+        text-decoration: none;
+        color: #302f2f;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        border-bottom: 2px lighten(#302f2f, 50%) dashed;
+      }
+
+      a:hover {
+        color: darken(#E5E5E5, 15%);
+        border-bottom: 2px darken(#E5E5E5, 15%) dashed;
+      }
+
+      a:focus {
+        color: darken(#E5E5E5, 15%);
+        border-bottom: 2px darken(#E5E5E5, 15%) dashed;
+      }
+    }
+  }
+
+}
+
+ul.center {
+  justify-content: center;
+}
+
+nav.main {
+  position: sticky;
+}
+
+li {
+  a {
+    text-decoration: none;
+    color: #302f2f;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-bottom: 2px lighten(#302f2f, 50%) dashed;
+  }
+
+  a:hover {
+    color: darken(#E5E5E5, 15%);
+    border-bottom: 2px darken(#E5E5E5, 15%) dashed;
+  }
+
+  a:focus {
+    color: darken(#E5E5E5, 15%);
+    border-bottom: 2px darken(#E5E5E5, 15%) dashed;
+  }
+}

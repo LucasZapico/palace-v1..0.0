@@ -1,0 +1,11 @@
+
+<footer>
+  <h2>I'm footer</h2>
+</footer>
+<script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+{{ $script := resources.Get "/js/script.js" }}
+{{ $script := $script | resources.Minify }}
+<link href="{{ $script.Permalink }}">
+<script type="text/javascript" src="{{ $script.Permalink }}">
+
+</script>
