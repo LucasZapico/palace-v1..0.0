@@ -131,3 +131,32 @@ for index, value in enumerate(squares):
 
 ### Dictionary's
 
+#### Create Dictionary
+
+```python 
+capitals = {'United States': 'Washington, DC','France': 'Paris','Italy': 'Rome'}
+```
+
+#### Access Values 
+
+```python 
+capitals['Italy']
+# 'Rome'
+```
+
+#### Add Key Value Pair
+
+```python  
+capitals["Spain"] = "Madrid"
+```
+
+####  Check Key Existence 
+
+```python 
+'Germany' in capitals
+# False
+
+'Italy' in capitals
+# True
+```
+
