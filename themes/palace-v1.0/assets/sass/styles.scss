@@ -1,5 +1,5 @@
 @import "normalize.scss";
-@import "marx.scss";
+//@import "marx.scss";
 @import "color.scss";
 @import "typography/typography.scss";
 @import "typography/type_color.scss";
@@ -9,8 +9,8 @@
 // @import "nav.scss";
 
 body {
-  background-color: #fffefb;
-  
+  // background-color: #fffefb;
+  background-color: green;
       a {
         color: $colorc;
       }
@@ -21,23 +21,19 @@ body {
       flex: 0 0 0;
       width: 0px;
       overflow: hidden;
+      transition: all 0.2s ease-in-out;
       background-color: $grey-l-2;
     }
     .sidenav-wrap.show {
       flex: 0 0 20rem;
       width: 80vw;
-      overflow: hidden;
+      overflow: show;
       
     }
     #sidenav {
-     
-      position: fixed;
+      height: 100%;
       margin: 0px;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      top: 0px;
-      left: 0px;
-      
+      background-color: red;
       transition: all ease-in-out .3s;
 
       //  sidenav 
@@ -110,12 +106,11 @@ body {
       display: flex;
       .sidenav-wrap {
         flex: 0 0 20rem;
-        width: 0px;
-        overflow: hidden;
+        width: 100%;
       }
       .sidenav-wrap.show {
         flex: 0 0 20rem;
-        overflow: hidden;
+        overflow: show;
         height: 100%;
       }
       #sidenav {
