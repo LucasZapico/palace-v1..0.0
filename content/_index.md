@@ -6,6 +6,7 @@ menu:
     identifier: "Home"
     weight: 1
 ---
+
 # Lucas's Notes
 
 > To know is to produce
