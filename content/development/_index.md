@@ -5,6 +5,6 @@ menu:
   docs:
     name: "Development"
     identifier: "Development"
-    parent: "Home"
+    parent: ""
     weight: 1
 ---
