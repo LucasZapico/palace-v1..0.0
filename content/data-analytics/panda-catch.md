@@ -9,22 +9,33 @@ menu:
     name: "Pandas Catch"
 ---
 
-# Pandas Catch 
+# Pandas Catch
 
 ## Reference
 
-### Cleaning Data 
+### Cleaning Data
 
 ##### Clean Column Headers
 
-```python 
-
+```python
 df.rename(columns=lambda x: x.strip().lower().replace(" ", "_"), inplace=True)
 # example "Some Header" --> "some_header"
 ```
 
 ##### Drop Columns of NAN
 
-```python 
+```python
 df.dropna(axis=1, how="all")
 ```
+
+## Resources
+
+### Where to Learn
+
+[Sentdex - Data Analysis with Python and Pandas on YouTube](https://www.youtube.com/watch?v=Iqjy9UqKKuo&list=PLQVvvaa0QuDc-3szzjeP6N6b0aDrrKyL-)
+
+[Python programing.net](https://pythonprogramming.net/)
+
+### Data
+
+[Kaggle](https://www.kaggle.com/)
