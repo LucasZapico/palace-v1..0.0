@@ -1,24 +1,22 @@
 <!-- sidebar start -->
-<div>
-        <div id="toggle" class=""><div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-              </div></div>
-<div class="sidenav-wrap ">
+
         
-<aside id="sidenav" class="">
-  <ul>
+
+        
+<aside id="sidenav" class="ui left fixed vertical menu">
+  
       {{ $currentPage := . }}
       {{ range .Site.Menus.docs }}
       
-          <li class="parent">
-              <a href="{{.URL }}">{{.Name }}</a>
+              <div class="item">  
+              <a  href="{{.URL }}">{{.Name }}</a>
+              {{ if .HasChildren }}
              {{ partial "menu_recursion.html" . }}
-          </li>
+             {{end}}
+             </div>
         
       {{ end }}
-  </ul>
+  
 </aside>
-</div>
-</div>
+
+
