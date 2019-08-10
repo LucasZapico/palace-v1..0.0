@@ -7,15 +7,15 @@
 @import "hamburger.scss";
 
 // @import "nav.scss";
-
+//
 body {
   // background-color: #fffefb;
 
-  a {
-    color: $grey-m-3;
-  }
-
   #sidenav {
+    a {
+      color: $grey-m-3;
+    }
+
     z-index: 1;
     padding-top: 1rem;
     top: 50px;
@@ -28,17 +28,18 @@ body {
   #content {
     padding-top: 4rem;
     margin-left: 300px;
-
-    #toggle {
-
-      cursor: pointer;
-    }
-
-    main {
-      padding: 1rem;
-
-    }
-
+    max-width: 900px;
+    //
+    //     #toggle {
+    //
+    //       cursor: pointer;
+    //     }
+    //
+    //     main {
+    //       padding: 1rem;
+    //
+    //     }
+    //
     #TableOfContents {
 
       margin-right: 0;
@@ -47,42 +48,46 @@ body {
       ul {
         list-style: none;
         padding-left: 20px;
+
+        a {
+          color: $grey-m-3;
+        }
       }
     }
   }
 }
-
-@media screen and (min-width: 900px) {
-  body {
-    #toggle {
-      display: none;
-    }
-
-    #content {
-      display: flex;
-
-      #sidenav {
-
-        top: 2px;
-        width: 20vw;
-
-      }
-
-      main {
-        flex-grow: 2;
-        flex-shrink: 1;
-        max-width: 850px;
-      }
-
-      #TableOfContents {
-        position: fixed;
-        top: 4rem;
-        flex-basis: 10rem;
-        flex-grow: 1;
-        flex-shrink: 1;
-
-      }
-    }
-  }
-
-}
+//
+// @media screen and (min-width: 900px) {
+//   body {
+//     #toggle {
+//       display: none;
+//     }
+//
+//     #content {
+//       display: flex;
+//
+//       #sidenav {
+//
+//         top: 2px;
+//         width: 20vw;
+//
+//       }
+//
+//       main {
+//         flex-grow: 2;
+//         flex-shrink: 1;
+//         max-width: 60vw;
+//       }
+//
+//       #TableOfContents {
+//         position: fixed;
+//         top: 4rem;
+//         flex-basis: 10rem;
+//         flex-grow: 1;
+//         flex-shrink: 1;
+//
+//       }
+//     }
+//   }
+//
+// }
