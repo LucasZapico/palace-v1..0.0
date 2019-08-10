@@ -11,151 +11,78 @@
 body {
   // background-color: #fffefb;
 
-  
-      a {
-        color: $grey-m-3;
-      }
+  a {
+    color: $grey-m-3;
+  }
+
+  #sidenav {
+    z-index: 1;
+    padding-top: 1rem;
+    top: 50px;
+    overflow: scroll;
+    margin: 0;
+    transition: all ease-in-out 0.3s;
+
+  }
+
   #content {
-    display: flex;
-    // Sidenave
-    & > div:first-child {
-      position: relative;
-      #toggle {
-        position: fixed;
-        top: 10px;
-        left: 2rem;
-        transition: all ease-in-out 0.3s;
-        cursor: pointer;
-      }
+    padding-top: 4rem;
+    margin-left: 300px;
+
+    #toggle {
+
+      cursor: pointer;
     }
-    .sidenav-wrap {
-      
-      flex: 0 0 0;
-      width: 0px;
-      overflow: hidden;
-      transition: all 0.2s ease-in-out;
-      background-color: $grey-l-2;
-      position: relative;
-      height: 100%;
-    }
-    .sidenav-wrap.show {
-      flex: 0 0 20rem;
-      width: 80vw;
-      overflow: show;
-      
-    }
-    
-    #sidenav {
-      height: 100%;
-      margin: 0px;
-      
-      transition: all ease-in-out .3s;
 
-      //  sidenav 
-      ul {
-        padding-left: 20px;
-        list-style: none;
-
-        li {
-          a {
-            color: $grey-d-2;
-          }
-
-
-          ul {
-            li {
-              a {
-                color: $grey-d-1;
-
-              }
-            }
-
-            ul {
-              li {
-                a {
-                  color: $grey-m-3;
-                }
-              }
-
-              ul {
-                li {
-                  a {
-                    color: $grey-m-2;
-                  }
-                }
-              }
-            }
-          }
-
-        }
-
-      }
-    
-      // Hamburger 
-      // &>:first-child {
-      //   right: -5rem;
-      //   position: absolute;
-      // }    
-      // &.hide {
-      //   max-width: 0px;
-      //   ul {
-      //     overflow: hidden;
-      //   }
-      // }
-    }
     main {
       padding: 1rem;
-      
+
     }
-   #TableOfContents {
-     margin-right: 0px;
+
+    #TableOfContents {
+
+      margin-right: 0;
       width: 20rem;
-     ul {
-       list-style: none;
-       padding-left: 20px;
-     }
-   }
+
+      ul {
+        list-style: none;
+        padding-left: 20px;
+      }
+    }
   }
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 900px) {
   body {
     #toggle {
       display: none;
     }
+
     #content {
       display: flex;
-      .sidenav-wrap {
-        flex: 1 1 20rem;
-        width: 100%;
-      }
-      .sidenav-wrap.show {
-        flex: 1 1 20rem;
-        overflow: show;
-        height: 100%;
-      }
+
       #sidenav {
-        position: sticky;
+
         top: 2px;
         width: 20vw;
-        height: 200vh;
+
       }
-      
-     
+
       main {
         flex-grow: 2;
         flex-shrink: 1;
         max-width: 850px;
       }
+
       #TableOfContents {
-        position: sticky;
-        top: 1rem;
+        position: fixed;
+        top: 4rem;
         flex-basis: 10rem;
         flex-grow: 1;
         flex-shrink: 1;
-      
+
       }
     }
   }
-  
+
 }
