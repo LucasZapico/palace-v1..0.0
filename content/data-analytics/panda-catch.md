@@ -11,7 +11,31 @@ menu:
 
 # Pandas Catch
 
+As the pandas documentation is pretty good and using it along with [devdocs.io](https://devdocs.io/) and a local bundler like [web2desk](https://appmaker.xyz/web2desk-for-business/?ref=producthunt) or if  you don't mind the terminal just use [nativefier](https://github.com/jiahaog/nativefier). This makes a quick ```cmd + tab``` to look up a method cake. 
+
+Therefore the notes here are assorted tricks, best practices and code solutions to scenarios that were not easily decernable from the docs. Rather then my own restructuring of the docs. 
+
+
+
 ## Reference
+
+### Tricks  
+
+Pandas can be used to transform data types. 
+
+### Best Practices 
+
+```mermaid 
+graph LR
+  start --> id1[import data]
+  id1 --> id2[df.shape]
+  id2 --> id3[df.info]
+  id3 --> id4[df.dtypes]
+  id4 --> id5[df.columns.values]
+  id5 --> id6[clean column header]
+  id6 --> id7[check df.head()]
+
+```
 
 ### Cleaning Data
 
@@ -20,6 +44,12 @@ menu:
 ```python
 df.rename(columns=lambda x: x.strip().lower().replace(" ", "_"), inplace=True)
 # example "Some Header" --> "some_header"
+```
+
+##### Drop Column 
+
+```python 
+df.drop(axis=1, columns="<column-name>")
 ```
 
 ##### Drop Columns of NAN
