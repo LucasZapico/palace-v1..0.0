@@ -6,25 +6,25 @@ categories:  ['computer-science','python', 'foundations','reference','developmen
 menu:
   docs:
     title: "Python Catch"
-    parent: "Development"
+    parent: "Python"
     name: "Python Catch"
 ---
 
-# Python Catch 
+# Python Catch
 
-### List 
+### List
 
-*List can be heterogeneous data though they are commonly used with data of the same type*
+_List can be heterogeneous data though they are commonly used with data of the same type_
 
 ##### Create List
 
-```python 
+```python
 nephews = ["Huey", "Dewey","Louie"]
 ```
 
-##### Access Element 
+##### Access Element
 
-```python 
+```python
 nephews[0]
 # 'Huey'
 ```
@@ -39,17 +39,21 @@ for i in  range(len(nephews)):
 ```
 
 ##### List Length
+
 ```python
 len(nephews)
 ```
 
-##### Add Element 
-__Method One__
-```python 
+##### Add Element
+
+**Method One**
+
+```python
 nephews.append("April Duck")
 ```
 
-__Method Two__
+**Method Two**
+
 ```python
 nephews.extends(['May Duck','June Duck'])
 ```
@@ -58,29 +62,31 @@ nephews.extends(['May Duck','June Duck'])
 ducks = nephews + ["Donald Duck", "Daisy Duck"]
 ```
 
-##### Add at Index 
-```python 
+##### Add at Index
+
+```python
 ducks.insert(0,"Scrooge McDuck")
 ```
 
 #### Remove Element
-*remove by value or index*
 
-```python 
+_remove by value or index_
+
+```python
 ducks.remove("Donald Duck")
 ```
 
-#### Sort 
+#### Sort
 
 ```python
 ducks.sort()
 ```
 
-#### Slices 
+#### Slices
 
-*The number of elements returned by a slice is the difference of the two indices*
+_The number of elements returned by a slice is the difference of the two indices_
 
-```python 
+```python
 squares = [0,1,4,9,16,25,36,49]
 ```
 
@@ -94,37 +100,37 @@ squares[2:4]
 # [4,9]
 ```
 
-__Start to Index__
+**Start to Index**
 
-```python 
+```python
 squares[:4]
 # [0,1,4,9]
 ```
 
-__Index to End__
+**Index to End**
 
-```python 
+```python
 squares[5:]
 #[36,49]
 ```
 
-__Count from End__
+**Count from End**
 
-```python 
+```python
 squares[-1]
 # [49]
 ```
 
-##### Reassignment with Slices 
+##### Reassignment with Slices
 
-```python 
+```python
 square[2:4] = ["four", "nine"]
 # [0,1,"four","nine",16,25,36,49]
 ```
 
-#### Loop with  ```enumerate()```
+#### Loop with  `enumerate()`
 
-```python 
+```python
 for index, value in enumerate(squares):
   print("Element", index, "->", value)
 ```
@@ -133,26 +139,26 @@ for index, value in enumerate(squares):
 
 #### Create Dictionary
 
-```python 
+```python
 capitals = {'United States': 'Washington, DC','France': 'Paris','Italy': 'Rome'}
 ```
 
-#### Access Values 
+#### Access Values
 
-```python 
+```python
 capitals['Italy']
 # 'Rome'
 ```
 
 #### Add Key Value Pair
 
-```python  
+```python
 capitals["Spain"] = "Madrid"
 ```
 
-####  Check Key Existence 
+#### Check Key Existence
 
-```python 
+```python
 'Germany' in capitals
 # False
 
@@ -160,9 +166,9 @@ capitals["Spain"] = "Madrid"
 # True
 ```
 
-#### Combining Dictionaries 
+#### Combining Dictionaries
 
-Note: If we combine two or more dictionaries if duplicate values exist it will not be identified. To avoid this behavior we use an update method. This ensures that our new values are added to the dic and any old values not duplicated. 
+Note: If we combine two or more dictionaries if duplicate values exist it will not be identified. To avoid this behavior we use an update method. This ensures that our new values are added to the dic and any old values not duplicated.
 
 ```python
 morecapitals = {"Germany":"Berlin", "United Kingdom":"London"}
@@ -170,42 +176,41 @@ capitals.update(morecapitals)
 # {'United States': 'Washington, DC','France': 'Paris','Italy': 'Rome',"Germany":"Berlin", "United Kingdom":"London"}
 ```
 
-#### Delete Values 
-Delete values by key 
+#### Delete Values
 
-```python 
+Delete values by key
+
+```python
 del capitals["United States"]
 # {'France': 'Paris','Italy': 'Rome',"Germany":"Berlin", "United Kingdom":"London"}
 ```
 
-#### Loops with Dictionaries 
+#### Loops with Dictionaries
 
 ```python
-for key in capitals: 
+for key in capitals:
   print(key, capitals[key])
 ```
 
-__Loop over keys__
+**Loop over keys**
 
 ```python
-for key in capitals.keys(): 
+for key in capitals.keys():
   print(key)
 ```
 
-__Loop over values__
-
+**Loop over values**
 
 ```python
-for values in capitals.values(): 
+for values in capitals.values():
   print(value)
-
 ```
 
-#### Comprehensions 
+#### Comprehensions
 
 Suppose we want a array of integer squares
 
-```python 
+```python
 squares = []
 
 for i in range(10):
@@ -213,15 +218,17 @@ for i in range(10):
 
 #[0,1,4,9,16,25,36,49,64,81]
 ```
-A __comprehension__ can do the same opperation in a single line
-```python 
+
+A **comprehension** can do the same opperation in a single line
+
+```python
 squares = [i**2 for i in range(10)]
 #[0,1,4,9,16,25,36,49,64,81]
 ```
 
-We can also compound opperations 
+We can also compound opperations
 
-```python 
+```python
 squares3 = [i**2 for i in range(30) if i % 3 ==0]
 # [0,9,36,81,144,225,324,441,576,729]
 ```
@@ -230,19 +237,19 @@ squares3 = [i**2 for i in range(30) if i % 3 ==0]
 
 ## Practise Project - Find the Anagrams
 
-- load dictionary of words 
-  
-```python 
+-   load dictionary of words
+
+```python
 word = open('words','r')
 ```
 
-- drop\n 
-- to lowercase
+-   drop\\n
+-   to lowercase
 
-- unqiue 
-- sort 
+-   unqiue
+-   sort
 
-```python 
+```python
 sorted('lives')
 ['e','i','l','s','v']
 ```

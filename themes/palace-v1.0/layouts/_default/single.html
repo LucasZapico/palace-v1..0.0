@@ -1,11 +1,11 @@
 
 {{ define "main" }}
 
-<main>
-  <h2> Hello from Single</h2>
+<main class="column ten wide">
+  <h1>{{.Title }}</h1>
   {{ .Content }}
   </main>
-  <aside>
+  <aside class="four wide  column">
       {{ .TableOfContents }}
   </aside>
 {{ end }}

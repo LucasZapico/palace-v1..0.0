@@ -1,8 +1,13 @@
-<ul>
+<div class="menu">
 {{ range .Children }}
-
-<li >  <a href="{{ .URL }}">{{ .Name }}</a></li>
+    {{ if .HasChildren }}
+  <div class="item header">
+      <a  href="{{ .URL }}">{{ .Name }}</a>
+    
   {{ partial "menu_recursion.html" . }}
-
+  </div>
+  {{ else }}
+  <a class="item" href="{{ .URL }}">{{ .Name }}</a>
+  {{ end }}
 {{ end }}
-</ul>
+</div>

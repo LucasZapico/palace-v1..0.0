@@ -3,3 +3,16 @@ languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "palace-v1.0"
 markdown = "blackfriday"
+
+[menu]
+
+[[menu.main]]
+  identifier = "about"
+  name = "about"
+  url = "/about/"
+  weight = 1
+
+[[menu.main]]
+  name = "home"
+  url = "/"
+  weight = 1
