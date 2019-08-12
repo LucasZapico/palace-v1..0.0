@@ -19,6 +19,9 @@ Therefore the notes here are assorted tricks, best practices and code solutions 
 
 ## Reference
 
+### Common Errors 
+
+
 ### Tricks  
 
 Pandas can be used to transform data types. 
@@ -37,7 +40,38 @@ graph LR
 
 ```
 
-### Cleaning Data
+## Cleaning Data
+
+### Noisy Data 
+
+#### Moving Average 
+__What:__
+The moving average is where for any given set of data the average of a subset is use as the plot point for the given subset. 
+
+__Why:__ 
+The moving average can be a useful tool to simplify a visualization to get a better idea of what is going on. 
+
+ $\forall \ x$ such that  $\ X \in x$, the moving average is defined over a given interval $n$ by taking the average $\bar x$
+
+
+*__Check__ ensure the index is sorted properly*
+```python 
+df["<some-column>"].rolling(25).mean()
+# calcuates the rolling average for a set
+```
+
+```python 
+df["<some-column>"].rolling(25).mean().plot()
+# plots the rolling average for a set
+```
+
+#### Cleaning Data Types 
+
+##### Date Time
+
+```python 
+df["<datecolum>"] = pd.to_datetime[df["date"]]
+```
 
 ##### Clean Column Headers
 
@@ -58,6 +92,10 @@ df.drop(axis=1, columns="<column-name>")
 df.dropna(axis=1, how="all")
 ```
 
+## Practice Projects 
+
+
+
 ## Resources
 
 ### Where to Learn
@@ -69,3 +107,5 @@ df.dropna(axis=1, how="all")
 ### Data
 
 [Kaggle](https://www.kaggle.com/)
+
+
