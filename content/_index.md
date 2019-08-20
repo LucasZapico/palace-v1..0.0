@@ -5,13 +5,24 @@ menu:
 
 # Lucas's Notes
 
-> To know is to produce
+> To know is to produce.
+
+This is the latest attempt to document, order and showcase my learning.
+
+###  Objectives
 
 ## What is this?
 
-My notes on...a lot of stuff. I hope that this will eventually be a life times worth of material structured for me by me. Information writen by me to reinforce the synapis as they are construted. Organized to further salitify said information. Searched over and over as a reference until the information is readily available without a seconds thought, when the situation deems.
+I could say that this has been a life long pursuit and this particular expression began in 2017. I started by using [Atom](https://atom.io/) and markdown to "just get notes down". The drive being to have a central palace of knowledge that I build myself and thereby know where everything is, how it is curated and further reinforcing previous knowledge by traversing the same paths. 
+Because, no matter how amazing Google is, websites change, reworked, comments are deleted, Youtube videos are taken down and we forget domains and twitter handles that had amazing insight. These are just the issues with regards to digital information and I am not even touching on literary. 
+This project is my attempt to keep the power readily available and continually strengthened until I know longer need to reference this palace to use pertinent knowledge to solve a challenge. Think of it is as organizing ones own house. 
 
-> Knowledge not redilty availbe when it is advantagous is useless.
+
+My notes on...a lot of stuff. The objectives for this repository are;
+1. Reinforce all of the courses, tools, and books which I have used to 
+2. Is to give me a quite  I hope that this will eventually be a life times worth of material structured for me by me. 
+
+> Knowledge not readily available when it is advantageous is useless.
 
 ## Why is this?
 
