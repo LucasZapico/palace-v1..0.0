@@ -45,9 +45,7 @@ body {
   }
 
   #TableOfContents {
-    position: fixed;
-    top: 4rem;
-    right: 0;
+    overflow: scroll;
     width: 20rem;
 
     ul {
