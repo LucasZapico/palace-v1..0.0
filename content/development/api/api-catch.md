@@ -26,11 +26,12 @@ __EXAMPLE__
 [JQuery Request Response Doc](https://api.jquery.com/category/ajax)
 
 __JQuery Request Example__
-```
+
+```jquery
 // jQuery request
 (function() {
   var url = "http://api.openweathermap.org/data/2.5/weather?q=London,England";
-  var apiKey = "8f41f474a335429dc652f5177e653498";
+  var apiKey = "<some-key>";
 
   $.get(url + '&appid=' + apiKey).done(function(response){
     console.log(response);
@@ -44,10 +45,10 @@ __JQuery Request Example__
 
 [Fectch doc on MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 
-```
+```javascript
 (function() {
   var url = "http://api.openweathermap.org/data/2.5/weather?q=London,England";
-  var apiKey = "8f41f474a335429dc652f5177e653498";
+  var apiKey = "<some-key>";
 
   fetch(url + '&appid=' + apikey).then(function(response){
     if(!response.ok){
@@ -63,7 +64,7 @@ __JQuery Request Example__
 ## API Requests with Node
 
 ### Basic HTTP request
-```Node
+```javascript
 const https = require('https');
 
 https.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY', (resp) => {
@@ -86,9 +87,12 @@ https.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY', (resp) => {
 __Note__: Basic API request with node http module.
 
 ### Request Module
-```npm install request```
 
-```node
+```
+npm install request
+```
+
+```javascript
 const request = require('request');
 
 request('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY', { json: true}, function(err, response, body){
@@ -100,40 +104,20 @@ request('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY', { json: true}, f
 });
 ```
 
-## Notes
-### Notes Learning REST API's
-[Lynda.com Learning REST API's](https://www.lynda.com/Web-Development-tutorials/Learning-REST-APIs/651230-2.html)
-
-#### REST API
-
-#### REQUEST
-
-#### RESPONSE
-
-## TO REVIEW
-
 #### Promises
 Promises used with the Fetch
 [promises](https://www.promisejs.org/)
 
-## RESOURCES
+## Resources
 ### Tools
 
 [HTTPie](https://httpie.org/)
 
 [curl://](https://curl.haxx.se/)
 
-### REFRENCES
+## References
+
+[Lynda.com Learning REST API's](https://www.lynda.com/Web-Development-tutorials/Learning-REST-APIs/651230-2.html)
+
 
 [Wiki list of http status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
-
-#### Courses
-
-##### [Lynda.com Learning REST API's](https://www.lynda.com/Web-Development-tutorials/Learning-REST-APIs/651230-2.html)
-
-- [Notes Lynda.com Learning REST API's](#note-learning-rest-apis)
-
-
-
-
-### DEFINITIONS

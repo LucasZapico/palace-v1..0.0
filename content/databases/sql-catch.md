@@ -1,17 +1,15 @@
 ---
-title: "Sql Catch"
+title: "SQL Catch"
 date: 2019-08-03T12:03:42-07:00
 draft: false
 categories: ['data-analytics','databases']
 menu:
   docs:
-    title: "Sql Catch"
+    title: "SQL Catch"
     parent: "Databases"
-    name: "SLQ catch"
+    name: "SQL catch"
 ---
 
-
-# **Notes and Reference SQL Language**
 
 #### SQL Categories
 
@@ -30,7 +28,7 @@ _Note SQL is not case sensitive but it is general practice to distinguish fields
 
 -   not case sensitive
 -   not white space sensitive
--   not semi collen sensitive (officially it should)
+-   not semi colon sensitive (officially it should)
 
 Though the addition of each of these formats are best practice and general convention.
 
@@ -96,29 +94,36 @@ SELECT COUNT( * ) FROM table;
 
 #### **Where\_**
 
-The **Where** clause is the predicate. Where is boolian. It is either true of false
+The **Where** clause is the predicate. Where is boolean. It is either true of false
 
 ```SQL
 
 ```
 
-# **NOTES ON SQL DATABASES**
+## Resources
 
-* * *
+Notes within this doc have been drawn from the following sources:
+[**MySQL shell CheatSheet**](https://gist.github.com/hofmannsven/9164408)
 
-## Goals
+### References
 
-1.  clearly understand the relationship between
-    -   \[] goal 1
-    -   \[] goal 2
-    -   \[] goal 3
-
-* * *
-
-## Popular SQL databases
+#### Popular SQL databases
 
 -   [MySQL](https://www.mysql.com/)
 -   [PostgreSQL](https://www.postgresql.org/)
+
+-   [CouchDB](https://couchdb.apache.org/)
+-   [Redis](https://redis.io/)
+
+
+### Tools
+
+-   SQL Server Management Studio
+-   SQL Developer
+-   Toad
+
+
+
 
 ### Installation
 
@@ -143,78 +148,13 @@ Upon download of dng mySQL shell and mySQL utilities expose mysql/bin to shell o
 >
 > prompt for password
 >
-> Sucess, we have entered the mysql shell
+> Success, we have entered the mysql shell
 
     > shell mysql show databases;
     //shows list of db's in current server
 
-##### primary-key point\_
 
-###### _sub-key point_
-
-**Key Term**: Description of key term
-
-_sub point_
-
-> Example: Flipping a fair coin.
->   Given:
->
-> -   There exist only two possible outcomes 'heads' 'tails'
-> -   Each outcome is equally likely. (Implied implicitly by the term fair)
->     (Cite)
 
 * * *
 
-### Definitions
 
-**Term**
-
--   Definition:
--   Example:
--   link to wiki:
--   cite of term in source:
--   cite of term in doc:
-
-**Term**
-
--   Definition
--   Example
--   link to wiki
--   cite of term in source
--   cite of term in doc
-
-# **NOTES ON NoSQL DATABASES**
-
-## Popular SQL databases
-
--   [CouchDB](https://couchdb.apache.org/)
--   [Redis](https://redis.io/)
-
-* * *
-
-## Resources
-
-Notes within this doc have been drawn from the following sources:
-
--   source: [**MySQL shell CheatSheet**](https://gist.github.com/hofmannsven/9164408)
-
-    **Example of literal cite**
-
-    -   Sheldon Ross M(2010). A first course in probability/ Sheldon Ross. - 8th ed. Upper Saddle River, NJ: Pearson Prentice Hall
-
-### References
-
-### Tools
-
--   SQL Server Management Studio
--   SQL Developer
--   Toad
-
-### Document Details
-
-date initialized: November,25,2017
-passes to date: 1
-current pass:
-subject:
-
-### Table of Contents
