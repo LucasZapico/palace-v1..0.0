@@ -235,7 +235,7 @@ squares3 = [i**2 for i in range(30) if i % 3 ==0]
 
 ##### Dictionaries and Comprehensions
 
-## Practise Project - Find the Anagrams
+## Practice Project - Find the Anagrams
 
 -   load dictionary of words
 
@@ -246,10 +246,27 @@ word = open('words','r')
 -   drop\\n
 -   to lowercase
 
--   unqiue
+-   unique
 -   sort
 
 ```python
 sorted('lives')
 ['e','i','l','s','v']
+```
+
+## Reference 
+
+###  Convert from Unix time 
+
+```python 
+import datetime as dt
+import time
+
+# Current time in Unix time
+now = time.time()
+print(now)
+# 1566146666.08675
+
+dt.datetime.fromtimestamp(now)
+# datetime.datetime(2019, 8, 18, 9, 43, 37, 731828)
 ```
