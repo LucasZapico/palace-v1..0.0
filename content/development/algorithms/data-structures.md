@@ -9,9 +9,8 @@ menu:
     parent: "Development"
     weight: 1
 ---
----
 
-# Foundations: Data Structure Lynda.com
+### Foundations: Data Structure Lynda.com
 
 ###### _Definitions:_
 
@@ -25,11 +24,11 @@ menu:
 >
 > #### Top Level Take Aways
 >
-> -   If you can clearly define a data-structure. That is define its size, type, etc, then our program will be more efficient.
+> -   If you can clearly define a data-structure. That is define its size, type, etc, then a program will be more efficient.
 
-## Data Structure Summary of Strength and Weaknesses
+### Data Structure Summary of Strength and Weaknesses
 
-### Arrays
+#### Arrays
 
 **Strengths**
 
@@ -38,15 +37,18 @@ menu:
     **Weakenesses**
 -   sorting and Searching
 -   inserting and deleting - if not at start or end
-    ### Linked List
+
+#### Linked List
+
     **Strengths**
+
 -   Inserting and deleting elements
 -   Iterating through the collection
     **Weakenesses**
 -   Direct access
 -   searching and sorting
 
-### Stacks and Queues
+#### Stacks and Queues
 
 **Strengths**
 
@@ -55,7 +57,7 @@ menu:
 -   Direct access
 -   Searching and sorting
 
-### Hash Tables
+#### Hash Tables
 
 **Strengths**
 
@@ -66,7 +68,7 @@ menu:
 -   retrieving in a sorted order
 -   searching fro a specific value
 
-### Sets
+#### Sets
 
 **Strengths**
 
@@ -76,7 +78,7 @@ menu:
 -   Direct access
 -   everything else
 
-### Binary Search Trees
+#### Binary Search Trees
 
 **Strengths**
 
@@ -89,9 +91,9 @@ menu:
 **Fixed(immutable) sructures are faster/smaller in memory**
 Pattern: If you need an immutable version to load, consider then copying to a mutable version for lookup.
 
-#### ----- Structs ----
-
 * * *
+
+#### Structs
 
 1.  Record::
 
@@ -107,21 +109,23 @@ Example:
 
 Example:
 
-    // define the struct
-    struct Book {
-      string title;
-      double price;
-      bool isPublished;
-      bool isHardback;
-    }
+        // define the struct
 
-    // create a variable with that struct type
-    Book first;
-    // set member variables
-    first.title = "Dune";
-    first.price = 100.99;
-    first.isPublished = true;
-    first.isHardback = false;
+        struct Book {
+          string title;
+          double price;
+          bool isPublished;
+          bool isHardback;
+        }
+
+        // create a variable with that struct type
+
+        Book first;
+        // set member variables
+        first.title = "Dune";
+        first.price = 100.99;
+        first.isPublished = true;
+        first.isHardback = false;
 
 Transposed as a record:
 
@@ -152,7 +156,7 @@ Example:
 
     myObject.animate(startPosition, finishPosition);
 
-##### ----- Collections : Arrays and List -----
+##### Collections : Arrays and List
 
 Note: An 'array' is the most common form of data-structure.
 
@@ -269,7 +273,7 @@ By contrast, a array must be reordered where as a node on a list can be acted up
 >
 > circular doubly linked list :: the final node has a reference to the initial node; and vice versa.
 
-#### ----- Stacks and Queues -----
+#### Stacks and Queues
 
 ##### Stacks
 
@@ -321,14 +325,8 @@ It is intersting to note that grahs are extremely generic data structures. Each 
 -   trees
 -   heaps
 
-## Next Step Learning and Review
+#### Next Step Learning and Review
 
 -   Learn: big O
     -   code efficiency
 -   Review: logs and exponents
-
-## Log
-
-5/20/2018, 6:20:09 PM
-
-\-------------- STOPPED AT: -------------------------
