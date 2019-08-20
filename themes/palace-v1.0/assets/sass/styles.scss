@@ -42,18 +42,20 @@ body {
     //     }
     //
 
-    #TableOfContents {
+  }
 
-      margin-right: 0;
-      width: 20rem;
+  #TableOfContents {
+    position: fixed;
+    top: 4rem;
+    right: 0;
+    width: 20rem;
 
-      ul {
-        list-style: none;
-        padding-left: 20px;
+    ul {
+      list-style: none;
+      padding-left: 20px;
 
-        a {
-          color: $grey-m-3;
-        }
+      a {
+        color: $grey-m-3;
       }
     }
   }

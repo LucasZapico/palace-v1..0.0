@@ -1,10 +1,11 @@
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  font-size: 16px;
   // line-height: 1.45;
   color: #333;
 
@@ -83,4 +84,20 @@ h6 {
 
 em {
   font-style: italic;
+}
+
+
+blockquote {
+  p {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: $grey-d-1;
+  }
+  padding: 1rem;
+  border-left: solid 3px $grey-m-1;
+  background-color: $grey-l-2; 
+  
+  &.large {
+
+  }
 }
