@@ -254,11 +254,11 @@ sorted('lives')
 ['e','i','l','s','v']
 ```
 
-## Reference 
+## Reference
 
-###  Convert from Unix time 
+### Convert from Unix time
 
-```python 
+```python
 import datetime as dt
 import time
 
@@ -269,4 +269,31 @@ print(now)
 
 dt.datetime.fromtimestamp(now)
 # datetime.datetime(2019, 8, 18, 9, 43, 37, 731828)
+```
+
+## Reference
+
+#### Add Progress Bar to Terminal
+
+```python
+# Print iterations progress
+def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, length = 100, fill = '█'):
+    """
+    Call in a loop to create terminal progress bar
+    @params:
+        iteration   - Required  : current iteration (Int)
+        total       - Required  : total iterations (Int)
+        prefix      - Optional  : prefix string (Str)
+        suffix      - Optional  : suffix string (Str)
+        decimals    - Optional  : positive number of decimals in percent complete (Int)
+        length      - Optional  : character length of bar (Int)
+        fill        - Optional  : bar fill character (Str)
+    """
+    percent = ("{0:." + str(decimals) + "f}").format(100 * (iteration / float(total)))
+    filledLength = int(length * iteration // total)
+    bar = fill * filledLength + '-' * (length - filledLength)
+    print('\r%s |%s| %s%% %s' % (prefix, bar, percent, suffix), end = '\r')
+    # Print New Line on Complete
+    if iteration == total:
+        print()
 ```
