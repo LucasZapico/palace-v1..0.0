@@ -1,8 +1,19 @@
 baseURL = ""
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Palace.Lucas"
 theme = "palace-v1.0"
 markdown = "blackfriday"
+googleAnalytics = ""
+
+[params]
+    author = "Lucas"
+    description = "Palace for Lucas Zapico"
+    githubUsername = "LucasZapico"
+    favicon = "img/favicon-32x32.ico"
+    images = ["site-feature-image.jpg"]
+
+
+
 
 [menu]
 
