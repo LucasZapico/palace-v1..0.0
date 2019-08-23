@@ -5,8 +5,8 @@ draft: false
 menu:
   docs:
     title: "Excel Catch"
-    parent: "Data Analytics"
-    name: "Excel Catch"
+    parent: "Data Analysis"
+    name: "Excel"
 ---
 
 ## Reference 

@@ -16,41 +16,41 @@ body {
     a {
       color: $grey-m-3;
     }
-
+    
     z-index: 1;
     padding-top: 1rem;
     top: 50px;
     overflow: scroll;
     margin: 0;
     transition: all ease-in-out 0.3s;
+    &.hide {
+      width: 0px;
+    }
 
   }
 
   #content {
+    flex-direction: column;
     padding-top: 4rem;
     margin-left: 300px;
     max-width: 900px;
-    //
-    //     #toggle {
-    //
-    //       cursor: pointer;
-    //     }
-    //
-    //     main {
-    //       padding: 1rem;
-    //
-    //     }
-    //
+   }
 
+  .toc-wrap {
+   
+    margin: 0px;
+    right: 0px;
+    z-index: 1;
+    transition: all ease-in-out 0.3s;
+    height: 100%;
   }
-
   #TableOfContents {
-    overflow: scroll;
-    width: 20rem;
+    margin-right: 0px;
+    border-left: solid $grey-d-1;
 
     ul {
       list-style: none;
-      padding-left: 20px;
+      padding-left: 15px;
 
       a {
         color: $grey-m-3;
@@ -58,38 +58,26 @@ body {
     }
   }
 }
-//
-// @media screen and (min-width: 900px) {
-//   body {
-//     #toggle {
-//       display: none;
-//     }
-//
-//     #content {
-//       display: flex;
-//
-//       #sidenav {
-//
-//         top: 2px;
-//         width: 20vw;
-//
-//       }
-//
-//       main {
-//         flex-grow: 2;
-//         flex-shrink: 1;
-//         max-width: 60vw;
-//       }
-//
-//       #TableOfContents {
-//         position: fixed;
-//         top: 4rem;
-//         flex-basis: 10rem;
-//         flex-grow: 1;
-//         flex-shrink: 1;
-//
-//       }
-//     }
-//   }
-//
-// }
+
+@media screen and (min-width: 900px){
+  body {
+    #sidenav {
+
+    }
+    #content {
+      flex-direction: row;
+      main {
+
+      }
+      .toc-wrap{
+        position: relative;
+        overflow: scroll;
+        
+        position: fixed;
+        #TableOfContents{
+
+        }
+      }
+    }
+  }
+}

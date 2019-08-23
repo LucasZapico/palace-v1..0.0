@@ -4,7 +4,13 @@
 
         
 <aside id="sidenav" class="ui left fixed vertical menu">
-  
+            <div class="ui category search item">
+                        <div class="ui transparent icon input">
+                          <input class="prompt" type="text" placeholder="cmd + ^ + f ">
+                          <i class="search link icon"></i>
+                        </div>
+                        <div class="results"></div>
+                      </div>
       {{ $currentPage := . }}
       {{ range .Site.Menus.docs }}
       

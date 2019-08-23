@@ -1,11 +1,11 @@
-
 {{ define "main" }}
 
-<main class="column ten wide">
+<main class="column twelve wide centered">
   <h1>{{.Title }}</h1>
   {{ .Content }}
-  </main>
-  <aside class="four wide  column" >
-      {{ .TableOfContents }}
-  </aside>
+</main>
+<aside class="toc-wrap">
+  <h5>Contents</h3>
+  {{ .TableOfContents }}
+</aside>
 {{ end }}
