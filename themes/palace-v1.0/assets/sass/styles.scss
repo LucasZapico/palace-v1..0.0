@@ -11,43 +11,122 @@
 //
 body {
   // background-color: #fffefb;
+  pre {
+    code {
+      
+      &:hover {
+        overflow: visible;
+      }
+    }
+  }
 
   #sidenav {
-    a {
-      color: $grey-m-3;
-    }
-    
     z-index: 1;
     padding-top: 1rem;
     top: 50px;
     overflow: scroll;
     margin: 0;
     transition: all ease-in-out 0.3s;
-    &.hide {
+   &.hidden {
       width: 0px;
     }
-
+    > ul {
+      & > li {
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: $grey-l-2;
+          top: 0px;
+          left: -40px;
+          width: 200%;
+          height: 1px;
+        }
+      }
+     }
+    
+    ul {
+      ion-icon {
+        position: absolute;
+        right: .8rem;
+        font-size: 1.2rem;
+      }
+      padding-left: 20px;
+      list-style: none;
+      margin: 0;
+      height: auto;
+      transition: all ease-in-out .3s;
+      li {
+        ul {
+          border-left:  solid $grey-d-2 1px;
+          ul {
+            border-left: solid $grey-d-1 1px;
+          }
+        }
+        margin: 0;
+      }
+    }
+    .hide {
+      overflow: hidden;
+      height: 0px;
+      transition: all ease-in-out .3s;
+    }
+   
+  
+    // text color and font 
+    // first degree
+    > ul li {
+      a {
+        color: $grey-d-2;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      // second degree
+      > ul li  {
+        a {
+          color: $grey-d-1;
+          font-size: .9rem;
+          font-weight: 400;
+        }
+        // third degree
+        > ul li {
+          a {
+            color: $grey-m-3;
+            font-size: .8rem;
+            font-weight: 400;
+          }
+        }
+      }
+    }
   }
 
   #content {
-    flex-direction: column;
-    padding-top: 4rem;
-    margin-left: 300px;
-    max-width: 900px;
+    flex-direction: column-reverse;
+    margin-top: 2rem;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    main {
+     
+      margin-left: 4rem;
+    }
    }
 
   .toc-wrap {
-   
-    margin: 0px;
-    right: 0px;
-    z-index: 1;
+    
+    
     transition: all ease-in-out 0.3s;
     height: 100%;
+    display: block;
+    position: static;
+    margin-left: 4rem;
+    
   }
   #TableOfContents {
     margin-right: 0px;
     border-left: solid $grey-d-1;
-
+    
     ul {
       list-style: none;
       padding-left: 15px;
@@ -55,27 +134,74 @@ body {
       a {
         color: $grey-m-3;
       }
+      li {
+        ul {
+          border-left:  solid $grey-l-3 1px;
+          ul {
+            border-left: solid $grey-l-2 1px;
+          }
+        }
+        margin: 0;
+      }
+    }
+    > ul li {
+      a {
+        color: $grey-d-2;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      // second degree
+      > ul li  {
+        a {
+          color: $grey-d-1;
+          font-size: .9rem;
+          font-weight: 400;
+        }
+        // third degree
+        > ul li {
+          a {
+            color: $grey-m-3;
+            font-size: .8rem;
+            font-weight: 400;
+          }
+        }
+      }
     }
   }
 }
 
 @media screen and (min-width: 900px){
   body {
+    #toggle {
+      display: none;
+    }
     #sidenav {
-
+  
+        &.hidden {
+          z-index: 1;
+    padding-top: 1rem;
+    top: 50px;
+    overflow: scroll;
+    margin: 0;
+           width: auto;
+         }
     }
     #content {
+      padding-top: 4rem;
+      margin-left: 300px;
+      max-width: 900px;
       flex-direction: row;
       main {
-
+        max-width: 50vw;
+        margin-left: 0px;
       }
       .toc-wrap{
         position: relative;
         overflow: scroll;
-        
+        right: 0px;
         position: fixed;
         #TableOfContents{
-
+          max-width: 20vw;
         }
       }
     }

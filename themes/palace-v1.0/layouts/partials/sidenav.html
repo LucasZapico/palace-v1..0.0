@@ -1,28 +1,22 @@
 <!-- sidebar start -->
-
-        
-
-        
 <aside id="sidenav" class="ui left fixed vertical menu">
-            <div class="ui category search item">
-                        <div class="ui transparent icon input">
-                          <input class="prompt" type="text" placeholder="cmd + ^ + f ">
-                          <i class="search link icon"></i>
-                        </div>
-                        <div class="results"></div>
-                      </div>
-      {{ $currentPage := . }}
-      {{ range .Site.Menus.docs }}
-      
-              <div class="item">  
-              <a  href="{{.URL }}">{{.Name }}</a>
-              {{ if .HasChildren }}
-             {{ partial "menu_recursion.html" . }}
-             {{end}}
-             </div>
-        
-      {{ end }}
+
+  <ul class="item">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.docs }}
   
+    <li>
+      <a href="{{.URL }}">
+        {{.Name }}
+      </a>
+      {{ if .HasChildren }}
+      <ul>
+        {{ partial "menu_recursion.html" . }}
+      </ul>
+    </li>
+
+    {{end}}
+    {{ end }}
+  </ul>
+
 </aside>
-
-
