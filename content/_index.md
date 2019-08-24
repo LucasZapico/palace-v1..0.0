@@ -11,6 +11,9 @@ This is the latest attempt to document, order and showcase my learning.
 
 ###  Objectives
 
+- __Reference__: Provide myself universally accessible reference to my notes, guides and resources
+- __Showcase__: Palace is a living validation of value for employers, and clients of the knowledge and by extension value I bring. 
+
 ## What is this?
 
 I could say that this has been a life long pursuit and this particular expression began in 2017. I started by using [Atom](https://atom.io/) and markdown to "just get notes down". The drive being to have a central palace of knowledge that I build myself and thereby know where everything is, how it is curated and further reinforcing previous knowledge by traversing the same paths. 
