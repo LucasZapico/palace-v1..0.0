@@ -1,12 +1,12 @@
 ---
 title: "Powershell_catch"
 date: 2019-08-20T13:54:04-07:00
-draft: false
+draft: true
 menu:
   docs:
     title: "Powershell_catch"
     parent: "Powershell"
-    name: ""
+    name: "Powershell_catch"
 ---
 
 
