@@ -10,10 +10,22 @@
 // @import "nav.scss";
 //
 body {
+
   // background-color: #fffefb;
+  a.link {
+    color: $grey-d-1;
+    border-bottom: 1px solid $grey-d-1;
+    transition: all ease-in-out 0.3s;
+
+    &:hover &:focus {
+      color: $grey-m-1;
+      border-bottom: 1px solid $grey-m-1;
+    }
+  }
+
   pre {
     code {
-      
+
       &:hover {
         overflow: visible;
       }
@@ -27,14 +39,17 @@ body {
     overflow: scroll;
     margin: 0;
     transition: all ease-in-out 0.3s;
-   &.hidden {
+
+    &.hidden {
       width: 0px;
     }
-    > ul {
-      & > li {
+
+    >ul {
+      &>li {
         position: relative;
         padding-top: 10px;
         padding-bottom: 20px;
+
         &::before {
           content: "";
           position: absolute;
@@ -45,53 +60,60 @@ body {
           height: 1px;
         }
       }
-     }
-    
+    }
+
     ul {
       ion-icon {
         position: absolute;
         right: .8rem;
         font-size: 1.2rem;
       }
+
       padding-left: 20px;
       list-style: none;
       margin: 0;
       height: auto;
       transition: all ease-in-out .3s;
+
       li {
         ul {
-          border-left:  solid $grey-d-2 1px;
+          border-left: solid $grey-d-2 1px;
+
           ul {
             border-left: solid $grey-d-1 1px;
           }
         }
+
         margin: 0;
       }
     }
+
     .hide {
       overflow: hidden;
       height: 0px;
       transition: all ease-in-out .3s;
     }
-   
-  
+
+
     // text color and font 
     // first degree
-    > ul li {
+    >ul li {
       a {
         color: $grey-d-2;
         font-size: 1rem;
         font-weight: 600;
       }
+
       // second degree
-      > ul li  {
+      >ul li {
         a {
           color: $grey-d-1;
           font-size: .9rem;
           font-weight: 400;
         }
+
         // third degree
-        > ul li {
+        >ul li {
           a {
             color: $grey-m-3;
             font-size: .8rem;
@@ -107,26 +129,28 @@ body {
     margin-top: 2rem;
     padding-top: 6rem;
     padding-bottom: 4rem;
+
     main {
-     
+
       margin-left: 4rem;
     }
-   }
+  }
 
   .toc-wrap {
-    
-    
+
+
     transition: all ease-in-out 0.3s;
     height: 100%;
     display: block;
     position: static;
     margin-left: 4rem;
-    
+
   }
+
   #TableOfContents {
     margin-right: 0px;
     border-left: solid $grey-d-1;
-    
+
     ul {
       list-style: none;
       padding-left: 15px;
@@ -134,31 +158,37 @@ body {
       a {
         color: $grey-m-3;
       }
+
       li {
         ul {
-          border-left:  solid $grey-l-3 1px;
+          border-left: solid $grey-l-3 1px;
+
           ul {
             border-left: solid $grey-l-2 1px;
           }
         }
+
         margin: 0;
       }
     }
-    > ul li {
+
+    >ul li {
       a {
         color: $grey-d-2;
         font-size: 1rem;
         font-weight: 600;
       }
+
       // second degree
-      > ul li  {
+      >ul li {
         a {
           color: $grey-d-1;
           font-size: .9rem;
           font-weight: 400;
         }
+
         // third degree
-        > ul li {
+        >ul li {
           a {
             color: $grey-m-3;
             font-size: .8rem;
@@ -170,37 +200,42 @@ body {
   }
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 900px) {
   body {
     #toggle {
       display: none;
     }
+
     #sidenav {
-  
-        &.hidden {
-          z-index: 1;
-    padding-top: 1rem;
-    top: 50px;
-    overflow: scroll;
-    margin: 0;
-           width: auto;
-         }
+
+      &.hidden {
+        z-index: 1;
+        padding-top: 1rem;
+        top: 50px;
+        overflow: scroll;
+        margin: 0;
+        width: auto;
+      }
     }
+
     #content {
       padding-top: 4rem;
       margin-left: 300px;
       max-width: 900px;
       flex-direction: row;
+
       main {
         max-width: 50vw;
         margin-left: 0px;
       }
-      .toc-wrap{
+
+      .toc-wrap {
         position: relative;
         overflow: scroll;
         right: 0px;
         position: fixed;
-        #TableOfContents{
+
+        #TableOfContents {
           max-width: 20vw;
         }
       }
