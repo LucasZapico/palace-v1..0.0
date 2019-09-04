@@ -12,7 +12,8 @@ This is the latest attempt to document, order and showcase my learning.
 ###  Objectives
 
 - __Reference__: Provide myself universally accessible reference to my notes, guides and resources
-- __Showcase__: Palace is a living validation of value for employers, and clients of the knowledge and by extension value I bring. 
+- __Showcase__: Palace is a living validation of value for employers, and clients of the knowledge and by extension value I bring.
+ 
 
 ## What is this?
 
@@ -27,9 +28,9 @@ My notes on...a lot of stuff. The objectives for this repository are;
 
 > Knowledge not readily available when it is advantageous is useless.
 
-## Why is this?
+## Why this?
 
-This site is the result of many different factors. Not the least of which has been an obession with note taking ever since I was a teenager. I have alway felt dejected with my hand written note books. A hand written note book is not reviseable. It is not iterateable. If you take the notes from a book or a course. You are following the pedigocial landscape that the teacher, team, instructors has deemed as _ideal_. At least in my expierece there is always another perspective. A new position on the informations if you take a step to the left or the right. The digital space allows for this development as an understanding of the enviroment of a knwowledge space evolves.
+This site is the result of many different factors. Not the least of which has been an obsession with note taking ever since I was a teenager. I have alway felt dejected with my hand written note books. A hand written note book is not revisable. It is not iterate-able. If you take the notes from a book or a course. You are following the pedagogical landscape that the teacher, team, instructors has deemed as _ideal_. At least in my experience there is always another perspective. A new position on the informations if you take a step to the left or the right. The digital space allows for this development as an understanding of the environment of a knowledge space evolves.
 
  Without getting to philosophical.
 
