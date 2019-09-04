@@ -1,7 +1,7 @@
 ---
 title: "Algebra"
 date: 2019-08-19T21:25:26-07:00
-draft: false
+draft: True
 menu:
   docs:
     title: "Algebra"

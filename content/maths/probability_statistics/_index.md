@@ -1,7 +1,7 @@
 ---
 title: "Probability Statistics"
 date: 2019-08-19T21:29:43-07:00
-draft: false
+draft: True
 menu:
   docs:
     title: "Probability_statistics"

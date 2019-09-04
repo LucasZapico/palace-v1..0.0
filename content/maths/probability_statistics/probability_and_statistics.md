@@ -1,7 +1,7 @@
 ---
 title: "Probability And Statistics"
 date: 2019-08-19T21:25:03-07:00
-draft: false
+draft: True
 menu:
   docs:
     title: "Probability_and_statistics"

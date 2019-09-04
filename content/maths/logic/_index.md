@@ -1,7 +1,7 @@
 ---
 title: "Logic"
 date: 2019-08-19T21:25:44-07:00
-draft: false
+draft: True
 menu:
   docs:
     title: "Logic"
