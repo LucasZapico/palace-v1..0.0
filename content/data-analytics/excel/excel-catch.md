@@ -5,7 +5,7 @@ draft: false
 menu:
   docs:
     title: "Excel Catch"
-    parent: "Data Analysis"
+    parent: "Data Analytics"
     name: "Excel"
 ---
 
