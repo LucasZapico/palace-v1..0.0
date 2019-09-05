@@ -1,2 +1,24 @@
-const sideNav=document.querySelector('.sidenav-wrap');const toggle=document.getElementById('toggle')
-toggle.addEventListener("click",e=>{console.log('click')})
+window.onload=function(){const sideNav=document.getElementById("sidenav")
+function sideNavMvp(){const sideNav=document.getElementById("sidenav")
+const sideMenu=sideNav.firstElementChild;console.log(sideMenu)
+console.log(sideMenu.children)
+console.log(sideMenu.children.length)
+var menuArr=Array.from(sideMenu.children)
+menuArr.forEach(function(el){var icon=document.createElement("ion-icon")
+icon.setAttribute('name','arrow-dropdown')
+icon.addEventListener("click",function(e){showDropdown(el)})
+el.insertBefore(icon,el.lastElementChild)
+console.log(el.lastElementChild)
+el.lastElementChild.classList.add('hide')})
+function showDropdown(el){if(el.lastElementChild.classList.contains('hide')){el.lastElementChild.classList.remove('hide')}else{el.lastElementChild.classList.add('hide')}}}
+toggleSideNav()
+function toggleSideNav(){const toggle=document.getElementById("toggle")
+toggle.addEventListener("click",function(e){if(sideNav.classList.contains('hidden')){sideNav.classList.remove('hidden')}else{sideNav.classList.add('hidden')}})}
+function dynamicSideNav(){const sideMenu=sideNav.firstElementChild;console.log(sideMenu)
+console.log(sideMenu.children)
+console.log(sideMenu.children.length)
+var menuArr=Array.from(sideMenu.children)
+menuArr.forEach(function(el){var nextMenu=el.lastElementChild
+Array.from(nextMenu.children).forEach(function(elm,i){console.log(elm,i)
+if(i>4){elm.classList.add('hide')}})
+console.log(el.lastElementChild.childElementCount)})}}
