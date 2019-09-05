@@ -14,3 +14,6 @@
 {{ $script := resources.Get "/js/script.js" }}
 {{ $script := $script | resources.Minify }}
 <script type="text/javascript" src="{{ $script.Permalink }}"></script>
+
+<script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>

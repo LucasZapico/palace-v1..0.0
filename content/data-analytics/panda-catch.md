@@ -92,6 +92,14 @@ df.drop(axis=1, columns="<column-name>")
 df.dropna(axis=1, how="all")
 ```
 
+##### Discover NAN and Fill
+
+```python 
+count_nan = df.isnull().sum()
+count_nan[count_nan>0]
+# return the columns name and count of nan
+```
+
 ## Practice Projects 
 
 
