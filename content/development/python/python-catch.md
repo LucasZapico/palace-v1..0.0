@@ -219,14 +219,14 @@ for i in range(10):
 #[0,1,4,9,16,25,36,49,64,81]
 ```
 
-A **comprehension** can do the same opperation in a single line
+A **comprehension** can do the same operation in a single line
 
 ```python
 squares = [i**2 for i in range(10)]
 #[0,1,4,9,16,25,36,49,64,81]
 ```
 
-We can also compound opperations
+We can also compound operations
 
 ```python
 squares3 = [i**2 for i in range(30) if i % 3 ==0]

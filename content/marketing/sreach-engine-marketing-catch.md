@@ -31,9 +31,9 @@ menu:
  
 $$ \frac{Clicks}{Impressions} $$
 
-##### Cost per Click
+##### Cost per Click (CPC)
 
-$$\frac{Total Costs}{Total Clicks} $$
+$$\frac{Total Spend}{Total Clicks} $$
 
 ##### Conversions Rate 
 
@@ -43,8 +43,21 @@ $$ \frac{Total Conversions}{Total Clicks}$$
 
 $$ \frac{Conversions}{Spend} $$
 
+
 ----
 ## References
+
+#### Snippets
+
+__Pandas Marketing Metrics Function__
+```python
+def cal_met(df):
+    df["CTR"] = df["Clicks"]/df["Impressions"]
+    df["CPC"] = df["Clicks"]/df_ad["Spend"]
+    df["CVR"] = df["Conversions"]/df["Clicks"]
+    df["CPA"] = df["Conversions"]/df["Spend"]
+    df["ROAS"] = df["Revenue"]/df["Spend"]
+```
 
 ### Resources
 [Google Ads Docs - Glossary ](https://support.google.com/google-ads/answer/2684489?hl=en)
