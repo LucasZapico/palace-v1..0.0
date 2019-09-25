@@ -281,8 +281,42 @@ import os
 ```python 
 os.mkdir("some-dir")
 ```
+## Magic Function 
+
+List all magic functions
+```python 
+%lsmagic
+```
+
+
 
 ## Reference
+
+### Memory Management 
+
+```python 
+sys.getsizeof(<object>)
+```
+
+#### Memory Magic Function 
+
+__Prerequisite__
+
+[Install Memory-profiler](https://pypi.org/project/memory-profiler/)
+
+```python
+pip install -U memory_profiler 
+```
+
+```python 
+%load_ext memory_profiler 
+
+def hello(x):
+  return "Hello" + x
+%memit hello("Kaladin Stormblessed")
+# peak memory: 71.05 MiB, increment: 0.46 MiB
+```
+
 
 #### Add Progress Bar to Terminal
 
