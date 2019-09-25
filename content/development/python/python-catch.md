@@ -271,6 +271,17 @@ dt.datetime.fromtimestamp(now)
 # datetime.datetime(2019, 8, 18, 9, 43, 37, 731828)
 ```
 
+## OS
+```python
+import os
+```
+
+#### Make Directory 
+
+```python 
+os.mkdir("some-dir")
+```
+
 ## Reference
 
 #### Add Progress Bar to Terminal
