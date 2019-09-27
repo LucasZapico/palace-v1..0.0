@@ -77,6 +77,19 @@ Applying a given model to the environment.
 
 > Garbage in garbage out
 
+#### Converting Categorical data
+
+- label encoding (two distinct values)
+- one hot encoding (more then two values)
+
+|             | Label Encoding     | One Hat Encoding    |
+|-------------|--------------------|---------------------|
+| __sklearn__ | ```LabelEncoder``` | ```OneHotEncoder``` |
+| __pandas__  | ```factorize()```  | ```get_dummies```   |
+
+
+*__Note:__ I think a One Hat Encoding result can be attain in a more concise method with ```groupby()``` and ```unstack()```*  
+
 
 ## References 
 

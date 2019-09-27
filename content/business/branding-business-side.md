@@ -6,7 +6,7 @@ menu:
   docs:
     title: "Branding Business Side"
     parent: "Business"
-    name: ""
+    name: "Branding Business Side"
 ---
 
 ---
