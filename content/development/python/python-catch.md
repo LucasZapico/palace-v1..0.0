@@ -10,7 +10,6 @@ menu:
     name: "Python Catch"
 ---
 
-# Python Catch
 
 ### List
 

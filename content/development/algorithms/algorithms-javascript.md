@@ -5,12 +5,12 @@ draft: false
 categories:  ['computer-science','algorithms', 'foundations','javascript']
 menu:
   docs:
-    Name: "Javascript"
+    Name: "Algorithms Javascript"
     parent: "Algorithms"
     weight: 1
 ---
----
 
+* * *
 
 ## Overview
 
