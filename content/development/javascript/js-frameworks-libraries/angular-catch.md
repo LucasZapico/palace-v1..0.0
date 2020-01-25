@@ -10,7 +10,7 @@ menu:
     name: "Angular Catch"
 ---
 
-## How does Angular Work 
+## How does Angular Work
 
 Angular is based on a component tree model. It loads from the root component then Angular goes component by component to find matches and loads those thereby batching load.  
 
@@ -21,14 +21,14 @@ The angular value is base on modular component. A component consists of Angular 
 -   dependency injection
 -   router module
 
-### Components 
+### Components
 
-Components are defined with a decorator ```@Component()```. 
-Components are associated with a DOM element via a selector. A selector can be a tag, class or id. A component extends a HTML markup. 
+Components are defined with a decorator ```@Component()```.
+Components are associated with a DOM element via a selector. A selector can be a tag, class or id. A component extends a HTML markup.
 
-##### Component Selectors 
+##### Component Selectors
 
-```typescript 
+```typescript
 @Component({
   selector: 'test-component', //<test-component>
   selector: '.test-class', //<div class="test-class">
@@ -38,24 +38,24 @@ Components are associated with a DOM element via a selector. A selector can be a
 
 **Component** is a directive with a template.
 
-Directives are changes within the DOM. An Angular directive fall into two types. 
+Directives are changes within the DOM. An Angular directive fall into two types.
 
 -   structural
 -   attributes
 
-__Structural directive__ change the appearance of an element in the DOM. 
+__Structural directive__ change the appearance of an element in the DOM.
 
-__Attribute directives__ change the behavior or functionality of an element. 
+__Attribute directives__ change the behavior or functionality of an element.
 
 Directives are defined with a selector.  
 
 ```typescript
 @Decorator({
-  selector: 'makeFavorite' 
+  selector: 'makeFavorite'
 })
 ```
 
-Once a directive has been defined it can be applied to an element in  two ways. 
+Once a directive has been defined it can be applied to an element in  two ways.
 
 __Write Attribute on Element - Example__
 
@@ -72,7 +72,7 @@ __Template syntax - Example__
 </div>
 ```
 
-Angular comes with a set of "out of the box" directive to ease development. 
+Angular comes with a set of "out of the box" directive to ease development.
 
 Pipe : change data
 
@@ -113,13 +113,13 @@ environments
 **Module**
 : a group of related components
 
-### Interpolation 
+### Interpolation
 
 Angular way to display dynamic data into a view
 
 __Not Supported with Interpolation {{}}__
 
-- assignments 
+- assignments
 - newing up variables
 - chaining expressions
 - incrementing/decrementing
@@ -128,26 +128,26 @@ _Even Angular app has at least one Module the App module_
 
 ### Modules
 
-An Angular application consists of at least one module. Within a modules for example ```app.module.ts``` the class decorator ```@NgModule({declarations: []})``` is use to define the  components accessible within a given module. 
+An Angular application consists of at least one module. Within a modules for example ```app.module.ts``` the class decorator ```@NgModule({declarations: []})``` is use to define the  components accessible within a given module.
 
 __Example of component import__
 
-```typescript 
+```typescript
 @Ngmodule({
   declarations: [
-    AppComponent, 
+    AppComponent,
     ExampleComponent
   ]
 })
 ```
 
-### Binding 
+### Binding
 
-#### Class Binding 
+#### Class Binding
 
 This can be used to bind a class to a element based on some condition.
 
-```typescript 
+```typescript
 //...
 
 @Component({
@@ -178,9 +178,9 @@ The ``[ngClass]`` directive can be uses to bind multiples css classes in an obje
 
 #### Style Binding
 
-Dynamically add a style to a element. 
+Dynamically add a style to a element.
 
-```typescript 
+```typescript
 //...
 @Component({
   selector: 'courses',
@@ -196,10 +196,10 @@ export class CoursesComponent {
 // <button class="btn btn-primary active>Save</button>
 ```
 
-#### Event Binding 
+#### Event Binding
 
 
-```typescript 
+```typescript
 //...
 
 @Component({
@@ -215,10 +215,10 @@ export class CoursesComponent {
 }
 ```
 
-#### Access to Event Object 
+#### Access to Event Object
 
 
-```typescript 
+```typescript
 //...
 
 @Component({
@@ -238,10 +238,10 @@ export class CoursesComponent {
 
 
 
-#### Event Filtering 
+#### Event Filtering
 
 __Tradition "Enter was pressed"__
-```typescript 
+```typescript
 //...
 
 @Component({
@@ -261,7 +261,7 @@ export class CoursesComponent {
 __Angular "Enter was pressed"__
 
 
-```typescript 
+```typescript
 //...
 
 @Component({
@@ -280,7 +280,7 @@ export class CoursesComponent {
 #### Passing input by Event - Traditional
 
 
-```typescript 
+```typescript
 //...
 
 @Component({
@@ -299,9 +299,9 @@ export class CoursesComponent {
 
 #### Angular - Passing input by Event
 
-Template variables 
+Template variables
 
-```typescript 
+```typescript
 //...
 
 @Component({
@@ -318,8 +318,8 @@ export class CoursesComponent {
 }
 ```
 
-__Property Binding - sObject oriented__ 
-```typescript 
+__Property Binding - sObject oriented__
+```typescript
 //...
 
 @Component({
@@ -353,7 +353,7 @@ imports: [
 )}
 ```
 *course.component.ts*
-```typescript 
+```typescript
 //...
 
 @Component({
@@ -363,7 +363,7 @@ imports: [
   `
 })
 export class CoursesComponent {
-  email="me@example" 
+  email="me@example"
 
   onKeyUp(email){
     console.log("enter was pressed")
@@ -372,7 +372,7 @@ export class CoursesComponent {
 }
 ```
 
-```typescript 
+```typescript
 //...
 
 @Component({
@@ -388,7 +388,7 @@ export class CoursesComponent {
 }
 ```
 
-### Pipes 
+### Pipes
 
 Pipes are used to format  data. For example
 
@@ -402,7 +402,7 @@ Pipes are used to format  data. For example
 
 [For a complete list of pipe options see Angular guides](https://angular.io/guide/pipes)
 
-#### Custom Pipe 
+#### Custom Pipe
 
 *course.component.ts*
 ```typescript
@@ -436,7 +436,7 @@ export class SummaryPipe implements PipeTransfrom  {
 }
 ```
 
-Register in module 
+Register in module
 *app.module.ts*
 ```typescript
 import { SummaryPipe } from './summary.pipe';
@@ -449,12 +449,12 @@ import { SummaryPipe } from './summary.pipe';
 //....
 
 ```
-###  Input - properties 
+###  Input - properties
 
 This example uses an alias
 
 *<some-component.component.html>*
-```html 
+```html
 <button
   #changeColor
   (click)="onClick()"
@@ -487,12 +487,12 @@ export class ClickFillComponent implements OnInit {
   }
   onClick() {
     this.isClick = !this.isClick;
-    
+
   }
 }
 ```
 
-### Output 
+### Output
 
 
 *app.component.html*
@@ -512,21 +512,26 @@ export class ClickFillComponent implements OnInit {
 ```typescript
 
 ```
-## Review 
- 
+
+### Passing Data Between Components
+
+
+
+## Review
+
 - ``ngContent``
 - trackby for list
 
 
 ## ``ngIf`` vs ``[hidden]``
 
-There are performance tradeoffs between ``ngIf`` and ``[hidden]``. The ``[hidden]`` method renders all elements to the DOM, including the hidden ones. Whereas, ``ngIf`` only renders to the DOM what is returned truthy. Therefore, the two dangers are of using bloated DOM tree or vs having to render on the fly many DOM elements. 
+There are performance tradeoffs between ``ngIf`` and ``[hidden]``. The ``[hidden]`` method renders all elements to the DOM, including the hidden ones. Whereas, ``ngIf`` only renders to the DOM what is returned truthy. Therefore, the two dangers are of using bloated DOM tree or vs having to render on the fly many DOM elements.
 
-- Use ``[hidden]`` when a user may toggle a large amount of DOM elements for a given interactions. 
+- Use ``[hidden]`` when a user may toggle a large amount of DOM elements for a given interactions.
 
 - Use ``*ngIf`` when the elements rendered are static or a low number.  
 
-``ngIf`` has performance ramifications depending on if we render a 
+``ngIf`` has performance ramifications depending on if we render a
 
 ### ``ngIf``
 
@@ -535,7 +540,7 @@ There are performance tradeoffs between ``ngIf`` and ``[hidden]``. The ``[hidden
     Something True
   </ng-container>
   <ng-template #elseblock>
-    Something false 
+    Something false
   </ng-template>
 ```
 
@@ -551,7 +556,7 @@ There are performance tradeoffs between ``ngIf`` and ``[hidden]``. The ``[hidden
 
 ```
 
-## ``ngSwitch`` tab Example 
+## ``ngSwitch`` tab Example
 
 *app.component.ts*
 ```typescript
@@ -601,13 +606,13 @@ export class AppComponent {
 
 ## Angular Cli Keyboard Shortcuts
 
-#### Generate Project 
+#### Generate Project
 
 ```bash
 ng new <some-project>
 ```
 
-#### Generate Component 
+#### Generate Component
 
 ```bash
 ng generate create <component-name>
@@ -615,12 +620,9 @@ ng generate create <component-name>
 ng g c <component-name>
 ```
 
-#### Generate Service 
-```bash 
+#### Generate Service
+```bash
 ng generate service <service-name>
 
 ng g s <service-name>
 ```
-
-
-
