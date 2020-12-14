@@ -355,6 +355,19 @@ sudo fs_usage
 echo $PATH | tr -s ":" '\n'
 ```
 
+#### Add Path to Shell Env 
+
+Open shell config; for example `.zshrc` or `.bashrc`
+```bash 
+export PATH=$HOME/path/to/bin:$PATH
+```
+
+or from CLI 
+
+```shell
+echo -n `export PATH=$HOME/bin:$PATH` >> ~/.zshrc
+```
+
 ## Other Fancy Commands
 
 #### Get whole website and dependencies to local env
@@ -396,4 +409,3 @@ subject:
 ## LOG
 
 4/21/2018, 2PM
-
